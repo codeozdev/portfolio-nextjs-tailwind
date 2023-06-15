@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import AboutImg from "@/public/images/navLogo.png";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
@@ -17,16 +18,16 @@ export default function Navbar() {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/images/navLogo.png" width={70} height={70} alt="/" />
+        <Image src={AboutImg} width={70} height={70} alt="/" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href="/">
+            <Link href="/about">
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href="/">
+            <Link href="/skills">
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
             <Link href="/">
@@ -48,7 +49,9 @@ export default function Navbar() {
 
       {/* hamburger icon icindeki menuler */}
       <div
-        className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
       >
         <div
           className={
@@ -58,7 +61,7 @@ export default function Navbar() {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <Image src="/images/navLogo.png" width={70} height={70} alt="/" />
+            <Image src={AboutImg} width={70} height={70} alt="/" />
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -76,10 +79,10 @@ export default function Navbar() {
               <Link href="/">
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href="/">
+              <Link href="/about">
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href="/">
+              <Link href="/skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
               <Link href="/">
