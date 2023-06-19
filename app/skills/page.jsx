@@ -10,7 +10,7 @@ import NextJS from "@/public/skills/nextjs.png";
 
 export default function Skills() {
   return (
-    <div className="w-full lg:h-screen p-2 py-40">
+    <div className="w-full lg:h-screen py-40 px-10">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full md:px-10">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Skills

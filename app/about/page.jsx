@@ -4,7 +4,7 @@ import AboutImg from "@/public/images/about.jpg";
 
 export default function About() {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16 px-4">
+    <div className="w-full md:h-screen flex items-center py-40 px-10">
       <div className="max-w-[1240px] m-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className="uppercase text-xl tracking-widest text-[#5651e5] pt-8">

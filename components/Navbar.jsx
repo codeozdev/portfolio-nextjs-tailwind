@@ -22,21 +22,21 @@ export default function Navbar() {
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">Home</li>
             </Link>
             <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:text-[#5651e5]">About</li>
             </Link>
             <Link href="/skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase  hover:text-[#5651e5]">Skills</li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+            <Link href="/projects">
+              <li className="ml-10 text-sm uppercase  hover:text-[#5651e5]">
                 Projects
               </li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+            <Link href="/contact">
+              <li className="ml-10 text-sm uppercase  hover:text-[#5651e5]">
                 Contact
               </li>
             </Link>
@@ -85,10 +85,10 @@ export default function Navbar() {
               <Link href="/skills">
                 <li className="py-4 text-sm">Skills</li>
               </Link>
-              <Link href="/">
+              <Link href="/projects">
                 <li className="py-4 text-sm">Projects</li>
               </Link>
-              <Link href="/">
+              <Link href="/contact">
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
